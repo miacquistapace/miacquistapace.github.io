@@ -72,3 +72,8 @@ function changeIcon(button){
    else
      $(button).find(".glyphicon").removeClass("glyphicon-chevron-down").addClass("glyphicon-chevron-right");
 }
+
+/*Stops/Starts star animation when clicked*/
+function startStop(){
+  document.getElementsByClassName('star').animation += ' infinite';
+}

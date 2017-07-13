@@ -76,7 +76,6 @@ footer{
   text-align:center;
     margin-top: 40px;
      position:absolute;
-     bottom: 100;
 }
 .footer-text{
   color:white;
@@ -103,4 +102,31 @@ footer{
 }
 .button-icon{
   float: right !important;
+}
+
+.star-canvas{
+  width: 100px;
+  height: 100px;
+}
+.star{
+  transform-origin: 50% 50%;
+  animation: star-rotate .5s linear;
+  animation-iteration-count: 8;
+}
+@keyframes star-rotate{
+  20%{
+    transform: rotate(36deg);
+  }
+  40%{
+    transform: rotate(72deg);
+  }
+  60%{
+    transform: rotate(108deg);
+  }
+  80%{
+    transform: rotate(144deg);
+  }
+  100%{
+    transform: rotate(180deg);
+  }
 }
