@@ -61,5 +61,14 @@ function submitData(userFirstName,userLastName,userEmail,userBody,userPhone){
   alert('Thank you ' + userFirstName + ' ' + userLastName + ' we will contact you at ' + userEmail);
   document.getElementById('submit-btn').innerHTML ='Thank You!';
   document.getElementById('submit-btn').style.backgroundColor = 'green';
+  /*Reloads the page after 2 seconds*/
   setTimeout(function(){window.location.reload()}, 2000);
+}
+
+/*Changes the Icon on Buttons that expand*/
+function changeIcon(button){
+  if ($(button).attr('aria-expanded') === "false")
+   $(button).find(".glyphicon").removeClass("glyphicon-chevron-right").addClass("glyphicon-chevron-down");
+   else
+     $(button).find(".glyphicon").removeClass("glyphicon-chevron-down").addClass("glyphicon-chevron-right");
 }

@@ -92,3 +92,15 @@ footer{
     /* symbol for "collapsed" panels */
     content: "\e080";    /* adjust as needed, taken from bootstrap.css */
 }
+.expanded-text{
+  max-width: 550px;
+}
+.service-button{
+  width: 600px;
+}
+.expanded-button-text{
+  float: left;
+}
+.button-icon{
+  float: right !important;
+}
