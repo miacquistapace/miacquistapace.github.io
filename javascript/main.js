@@ -74,10 +74,8 @@ function changeIcon(button){
 }
 
 /*Checks if on mobile devicre and changes header size accordingly*/
-$(window).resize(function() {
-  alert('works');
-if( $(window).width() < 960) {
-
-   $('footer').style.height='250px';
-}
-}
+$(document).ready(function(){
+    $(window).resize(function(){
+        $("span").text(x += 1);
+    });
+});
