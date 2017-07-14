@@ -73,7 +73,7 @@ function changeIcon(button){
      $(button).find(".glyphicon").removeClass("glyphicon-chevron-down").addClass("glyphicon-chevron-right");
 }
 
-/*Stops/Starts star animation when clicked*/
-function startStop(){
-  document.getElementsByClassName('star').animation += ' infinite';
+/*Checks if on mobile devicre and changes header size accordinly*/
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+ $('footer').style.height='250px';
 }
