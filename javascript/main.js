@@ -72,10 +72,19 @@ function changeIcon(button){
    else
      $(button).find(".glyphicon").removeClass("glyphicon-chevron-down").addClass("glyphicon-chevron-right");
 }
-
-/*Checks if on mobile devicre and changes header size accordingly*/
-$(document).ready(function(){
-    $(window).resize(function(){
-        $("span").text(x += 1);
-    });
-});
+/*Makes animation start/stop when clicked*/
+function startStop(){
+var star = document.getElementById('animated-star');
+if (star.style.webkitAnimationPlayState="running")
+    star.style.webkitAnimationPlayState="paused";
+else
+  star.style.webkitAnimationPlayState="running";
+}
+/*Checks if window is smaller than 960px and changes header size accordingly*/
+$(document).load($(window).bind("resize", listenWidth));
+    function listenWidth( e ) {
+        if($(window).width() < 960){
+          alert('hello');
+        }
+    }
+    listenWidth();

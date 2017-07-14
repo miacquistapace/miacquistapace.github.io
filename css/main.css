@@ -110,8 +110,7 @@ footer{
 }
 .star{
   transform-origin: 50% 50%;
-  animation: star-rotate .5s linear;
-  animation-iteration-count: 8;
+  animation: star-rotate .5s linear infinite;
 }
 @keyframes star-rotate{
   20%{
