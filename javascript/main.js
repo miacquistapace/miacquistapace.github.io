@@ -84,7 +84,6 @@ else
 $(document).load($(window).bind("resize", listenWidth));
     function listenWidth( e ) {
         if($(window).width() < 960){
-          alert('hello');
         }
     }
     listenWidth();
