@@ -73,7 +73,11 @@ function changeIcon(button){
      $(button).find(".glyphicon").removeClass("glyphicon-chevron-down").addClass("glyphicon-chevron-right");
 }
 
-/*Checks if on mobile devicre and changes header size accordinly*/
-if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
- $('footer').style.height='250px';
+/*Checks if on mobile devicre and changes header size accordingly*/
+$(window).resize(function() {
+  alert('works');
+if( $(window).width() < 960) {
+
+   $('footer').style.height='250px';
+}
 }
